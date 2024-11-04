@@ -35,6 +35,6 @@ function createElements(words) {
 // This fucking sucks
 var req = new XMLHttpRequest();
 req.overrideMimeType("application/json");
-req.open("GET", "https://cdn.jsdelivr.net/npm/an-array-of-english-words", true);
+req.open("GET", "/words.json", true);
 req.onload = function() { createElements(JSON.parse(req.responseText)) };
 req.send();
