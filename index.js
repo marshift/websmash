@@ -14,7 +14,7 @@ var INTENSITY = getRandomFloat(4, 2) // TODO: User input for intensity?
 
 // Actual logic
 function createElements(words) {
-    for (let i = 0; i < 50 * INTENSITY; i++) {
+    for (var i = 0; i < 50 * INTENSITY; i++) {
         var elem = document.createElement(getRandomFromArray(ALLOWED_ELEMENTS));
         elem.textContent = getRandomFromArray(words);
         elem.href = "javascript:document.location.reload();";
